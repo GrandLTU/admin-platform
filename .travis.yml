@@ -17,6 +17,6 @@ env:
   
 before_script:
   - composer install
-  - bin/console server:start 127.0.0.1:8000
+  - bin/console server:start localhost:8000
 
 script: bin/behat -p chrome
