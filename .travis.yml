@@ -7,8 +7,15 @@ sudo: false
 addons:
   chrome: stable
   
+services:
+  - mysql
+  
+env:
+  APP_ENV=test
+  DATABASE_URL=mysql://root:@127.0.0.1:3306/admin_platform
+  
 before_script:
   - composer install
-  - APP_ENV=test bin/console server:start 127.0.0.1:8000
+  - bin/console server:start 127.0.0.1:8000
 
-script: bin/behat
+script: bin/behat -p chrome
