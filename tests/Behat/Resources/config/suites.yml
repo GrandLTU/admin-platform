@@ -1,2 +1,4 @@
 imports:
-    - suites/default.yml
+    - suites/homepage.yml
+    - suites/locale.yml
+    - suites/user.yml

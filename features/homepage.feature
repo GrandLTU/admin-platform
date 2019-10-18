@@ -1,11 +1,12 @@
+@admin @homepage
 Feature: Homepage
   In order to administrate application
   As a administrator
   I need to be able to see admin page
 
   Background:
-    Given There is a locale
-    And There is an admin user "administrator"
+    Given there is a locale
+    And there is an admin user "administrator"
 
   Scenario: Open admin page logged in
     Given I am logged in as "administrator"

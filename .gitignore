@@ -10,9 +10,9 @@
 /node_modules/
 /public/assets/
 
-###> behat/symfony2-extension ###
+###> friends-of-behat/symfony-extension ###
 /behat.yml
-###< behat/symfony2-extension ###
+###< friends-of-behat/symfony-extension ###
 
 ###> symfony/phpunit-bridge ###
 .phpunit
@@ -23,6 +23,5 @@
 ###< symfony/web-server-bundle ###
 
 ###> phpunit/phpunit ###
-/phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###

@@ -3,4 +3,4 @@ security:
         main:
             guard:
                 authenticators:
-                    - App\Tests\TestBasicAuthenticator
+                    - App\Tests\Services\TestBasicAuthenticator

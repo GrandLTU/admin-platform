@@ -7,14 +7,14 @@
         "ext-iconv": "*",
         "admin-platform/admin-bundle": "^0.5.2",
         "sylius/fixtures-bundle": "^1.4",
-        "symfony/console": "4.2.*",
-        "symfony/dotenv": "4.2.*",
-        "symfony/flex": "^1.1",
-        "symfony/framework-bundle": "4.2.*",
-        "symfony/security-bundle": "4.2.*",
+        "symfony/console": "4.3.*",
+        "symfony/dotenv": "4.3.*",
+        "symfony/flex": "^1.3.1",
+        "symfony/framework-bundle": "4.3.*",
+        "symfony/security-bundle": "4.3.*",
         "symfony/swiftmailer-bundle": "^3.2",
-        "symfony/templating": "4.2.*",
-        "symfony/yaml": "4.2.*"
+        "symfony/templating": "4.3.*",
+        "symfony/yaml": "4.3.*"
     },
     "require-dev": {
         "behat/behat": "^3.5",
@@ -22,12 +22,12 @@
         "behat/mink-browserkit-driver": "^1.3@dev",
         "behat/mink-extension": "^2.3",
         "behat/mink-selenium2-driver": "^1.3@dev",
-        "behat/symfony2-extension": "^2.1",
+        "friends-of-behat/symfony-extension": "^2.0",
         "phpunit/phpunit": "^8.0",
-        "symfony/debug-bundle": "4.2.*",
+        "symfony/debug-bundle": "4.3.*",
         "symfony/profiler-pack": "^1.0",
         "symfony/test-pack": "^1.0",
-        "symfony/web-server-bundle": "4.2.*"
+        "symfony/web-server-bundle": "4.3.*"
     },
     "config": {
         "preferred-install": {
@@ -72,7 +72,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.2.*"
+            "require": "4.3.*"
         }
     }
 }

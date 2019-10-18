@@ -20,7 +20,7 @@ Running behat tests
 
 ```bash
 chromedriver --url-base=wd/hub --port=4444
-APP_ENV=test bin/console server:start 127.0.0.1:8000
+bin/console --env=test server:run 127.0.0.1:8000
 
 bin/behat
 ```

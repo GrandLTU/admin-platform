@@ -1,0 +1,10 @@
+default:
+    suites:
+        user:
+            filters:
+                tags: '@user'
+            contexts:
+                - App\Tests\Behat\Context\DbIsolationContext
+                - App\Tests\Behat\Context\FixtureContext
+                - App\Tests\Behat\Context\AdminContext
+                - App\Tests\Behat\Context\AdminUserContext

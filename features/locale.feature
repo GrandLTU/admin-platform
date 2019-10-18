@@ -1,11 +1,12 @@
+@admin @locale
 Feature:
   In order to administrate locales
   As a administrator
   I need to be able to manage locales
 
   Background:
-    Given There is a locale
-    And There is an admin user "administrator"
+    Given there is a locale
+    And there is an admin user "administrator"
     And I am logged in as "administrator"
 
   Scenario: List locales

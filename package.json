@@ -10,6 +10,7 @@
     "babel-register": "^6.26.0",
     "dedent": "^0.7.0",
     "fast-async": "^6.3.7",
+    "fomantic-ui-css": "^2.4.1",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-if": "^2.0.0",
@@ -27,7 +28,6 @@
     "rollup-plugin-inject": "^2.0.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^4.0.0",
-    "semantic-ui-css": "^2.4.1",
     "upath": "^1.1.0",
     "yargs": "^6.4.0"
   },

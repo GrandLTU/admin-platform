@@ -1,27 +1,28 @@
-import 'semantic-ui-css/components/accordion';
-import 'semantic-ui-css/components/checkbox';
-import 'semantic-ui-css/components/dimmer';
-import 'semantic-ui-css/components/dropdown';
-import 'semantic-ui-css/components/rating';
-import 'semantic-ui-css/components/sidebar';
-import 'semantic-ui-css/components/tab';
-import 'semantic-ui-css/components/transition';
+import 'fomantic-ui-css/components/accordion';
+import 'fomantic-ui-css/components/checkbox';
+import 'fomantic-ui-css/components/dimmer';
+import 'fomantic-ui-css/components/dropdown';
+import 'fomantic-ui-css/components/rating';
+import 'fomantic-ui-css/components/sidebar';
+import 'fomantic-ui-css/components/tab';
+import 'fomantic-ui-css/components/transition';
 import $ from 'jquery';
 
-import 'sylius/ui/sylius-api-login'
-import 'sylius/ui/sylius-api-toggle'
-import 'sylius/ui/sylius-auto-complete'
-import 'sylius/ui/sylius-bulk-action-require-confirmation'
-import 'sylius/ui/sylius-form-collection'
-import 'sylius/ui/sylius-prototype-handler'
-import 'sylius/ui/sylius-require-confirmation'
-import 'sylius/ui/sylius-toggle'
+import 'sylius/ui/sylius-api-login';
+import 'sylius/ui/sylius-api-toggle';
+import 'sylius/ui/sylius-auto-complete';
+import 'sylius/ui/sylius-bulk-action-require-confirmation';
+import 'sylius/ui/sylius-form-collection';
+import 'sylius/ui/sylius-prototype-handler';
+import 'sylius/ui/sylius-require-confirmation';
+import 'sylius/ui/sylius-toggle';
 
 $(document).ready(() => {
     // ### SYLIUS ###
-    $('#sidebar').addClass('visible');
-    $('#sidebar').sidebar('attach events', '#sidebar-toggle', 'toggle');
-    $('#sidebar').sidebar('setting', {
+    const $sidebar = $('#sidebar');
+    $sidebar.addClass('visible');
+    $sidebar.sidebar('attach events', '#sidebar-toggle', 'toggle');
+    $sidebar.sidebar('setting', {
         dimPage: false,
         closable: false,
     });

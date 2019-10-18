@@ -62,7 +62,7 @@ const paths = {
             upath.normalizeSafe('private/sass/**'),
         ],
         css: [
-            upath.joinSafe(nodeModulesPath, 'semantic-ui-css/semantic.min.css'),
+            upath.joinSafe(nodeModulesPath, 'fomantic-ui-css/semantic.min.css'),
             upath.joinSafe(vendorUiPath, 'Resources/private/css/**'),
             upath.normalizeSafe('private/css/**'),
         ],
@@ -167,6 +167,7 @@ export const buildAdminJs = async function buildAdminJs() {
                     ['module-resolver', {
                         alias: {
                             'sylius/ui': upath.resolve(upath.joinSafe(vendorUiPath, 'Resources/private/js')),
+                            'semantic-ui-css': upath.resolve(upath.joinSafe(nodeModulesPath, 'fomantic-ui-css')),
                         },
 
                     }],
@@ -190,7 +191,7 @@ buildAdminJs.description = 'Build admin js assets.';
 
 export const buildAdminCss = function buildAdminCss() {
     const copyStream = merge(
-        gulp.src(upath.joinSafe(nodeModulesPath, 'semantic-ui-css/themes/**/*'))
+        gulp.src(upath.joinSafe(nodeModulesPath, 'fomantic-ui-css/themes/**/*'))
             .pipe(gulp.dest(upath.joinSafe(adminRootPath, 'css/themes'))),
     );
 

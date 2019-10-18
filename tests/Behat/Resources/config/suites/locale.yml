@@ -1,0 +1,9 @@
+default:
+    suites:
+        locale:
+            filters:
+                tags: '@locale'
+            contexts:
+                - App\Tests\Behat\Context\DbIsolationContext
+                - App\Tests\Behat\Context\FixtureContext
+                - App\Tests\Behat\Context\AdminContext

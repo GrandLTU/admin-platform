@@ -1,3 +1,36 @@
 imports:
     - tests/Behat/Resources/config/profiles.yml
     - tests/Behat/Resources/config/suites.yml
+
+default:
+    extensions:
+        Behat\MinkExtension:
+            files_path: "%paths.base%/tests/Behat/Resources/files/"
+            base_url: http://localhost:8000/
+            browser_name: chrome
+            default_session: symfony
+            javascript_session: chrome
+            sessions:
+                symfony:
+                    symfony: ~
+                chrome:
+                    selenium2:
+                        wd_host: "http://localhost:4444/wd/hub"
+                        browser: chrome
+                        capabilities:
+                            browserName: chrome
+                            browser: chrome
+                            version: ""
+                            marionette: null # https://github.com/Behat/MinkExtension/pull/311
+                            chrome:
+                                switches:
+                                    - "--headless"
+                                    - "--disable-gpu"
+                                    - "--no-sandbox"
+        FriendsOfBehat\SymfonyExtension:
+            bootstrap: tests/bootstrap.php
+            kernel:
+                class: App\Kernel
+                path: src/Kernel.php
+                environment: test
+                debug: false

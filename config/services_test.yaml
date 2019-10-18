@@ -4,5 +4,19 @@ services:
         autowire: true
         autoconfigure: true
         public: true
+        bind:
+            $locale: '%locale%'
 
-    App\Tests\TestBasicAuthenticator: ~
+    App\Tests\Behat\Context\:
+        resource: '../tests/Behat/Context/*'
+
+    App\Tests\Services\:
+        resource: '../tests/Services/*'
+
+    Doctrine\Common\DataFixtures\Purger\ORMPurger: ~
+    Doctrine\ORM\Tools\SchemaTool: ~
+
+    App\Tests\Services\ReferencesInterface: '@App\Tests\Services\FlushingReferences'
+    App\Tests\Services\FlushingReferences:
+        arguments:
+            $inner: '@App\Tests\Services\References'
